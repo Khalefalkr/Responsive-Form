@@ -1,0 +1,35 @@
+body{
+    background-color:#396c93;
+}
+form{
+    background-color:#00008b;
+    padding:10px;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:center;
+    gap:10px;
+    position:relative;
+    top:35vh;
+    margin-left:20px;
+    margin-right:20px;
+}
+input{
+    font-size:18px;
+    padding:5px;
+}
+input[required]{
+    background-color:#ffd700;
+    flex-grow:2;
+}
+input[value='send']{
+    flex-grow:1;
+    background-color:#387ADF;
+}
+
+@media (max-width:600px){
+    form{
+        flex-direction:column;
+        position:relative;
+        top:30vh;
+    }
+}
